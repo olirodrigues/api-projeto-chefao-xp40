@@ -12,11 +12,11 @@ quantidade INTEGER,
 
 link_foto VARCHAR(255), 
 
-    numero_departamento INTEGER NOT NULL,
+    numero_categoria INTEGER NOT NULL,
 
-CONSTRAINT cod_produto FOREIGN KEY 
+CONSTRAINT produto_depto FOREIGN KEY 
 
-(numero_departamento) REFERENCES departamento(numero)
+(categoria_numero) REFERENCES categoria(numero)
 
 );
 
