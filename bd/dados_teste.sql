@@ -21,7 +21,6 @@ INSERT INTO categoria VALUES
 (null, "Vasos", "Vasos variados para todos os tipos de plantas");
 
 -- Produtos
-
 INSERT INTO produto VALUES
 (null, "Estrelinha Gorda", "Suculenta Estrelinha Gorda", 15, 5, 'estrelinha-gorda.png', 1),
 (null, "Orelha de Shrek ", "Suculenta Orelha de Shrek para acompanhar seu burro", 22, 3, 'orelha-sherek.png', 1),
@@ -31,3 +30,24 @@ INSERT INTO produto VALUES
 (null, "Vaso de Samambaia", "Vaso grande de samambaia", 12, 4, 'vaso-samambaia.png', 3),
 (null, "Vaso pequeno", "Vaso tamanho pequeno - marrom", 25, 6, 'vaso-pequeno.png', 3),
 (null, "Vaso de Suculenta", "Vaso de suculenta - preto", 10, 5, 'vaso-suculenta.png', 3);
+
+-- Pedidos
+INSERT INTO pedido VALUES
+(null, 'F', "2022-01-27", 52, 5),
+(null, 'F', "2022-02-05", 30, 3),
+(null, 'F', "2022-02-12", 50, 1),
+(null, 'F', "2022-02-21", 47, 2),
+(null, 'F', "2022-03-02", 61, 2);
+
+-- Item Pedido
+INSERT INTO item_pedido VALUES
+(null, 1, 40, 1, 4),
+(null, 1, 12, 1, 6),
+(null, 2, 15, 2, 1),
+(null, 1, 22, 3, 2),
+(null, 1, 18, 3, 3),
+(null, 1, 10, 3, 8),
+(null, 1, 25, 4, 5),
+(null, 1, 22, 4, 2),
+(null, 1, 25, 5, 7),
+(null, 2, 18, 5, 2);
