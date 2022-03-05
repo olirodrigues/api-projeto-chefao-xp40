@@ -1,0 +1,27 @@
+{
+  "name": "projeto-chefao-xp40",
+  "version": "1.0.0",
+  "description": "Desafio Chefão da Gama Academy #40",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "code": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olirodrigues/projeto-chefao-xp40.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olirodrigues/projeto-chefao-xp40/issues"
+  },
+  "homepage": "https://github.com/olirodrigues/projeto-chefao-xp40#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
