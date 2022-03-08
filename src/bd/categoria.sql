@@ -1,0 +1,10 @@
+CREATE TABLE categoria(
+
+numero INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+
+nome VARCHAR(50) NOT NULL, 
+
+descricao TEXT
+
+);
+
