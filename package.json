@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/olirodrigues/projeto-chefao-xp40#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
