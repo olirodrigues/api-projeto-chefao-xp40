@@ -18,3 +18,15 @@ try {
 }
 
 module.exports = db;
+
+async function temConexao() {
+    try {
+        console.log("Banco de dados conectado!");
+    } catch (error) {
+        console.error("Não tem conexão com o banco de dados!")
+    }
+};
+
+Object.assign(db, {
+    temConexao,
+});

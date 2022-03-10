@@ -4,7 +4,9 @@ const produtoController = {
     },
 
     cadastrarProduto: (req, res) => {
-        res.json([{ nome: "Produto x"}])
+        console.log(req.body);
+        res.send("Produto Cadastrado!")
+        
     }
 }
 
