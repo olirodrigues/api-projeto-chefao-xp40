@@ -23,7 +23,6 @@ const produtoController = {
         res.json(listeiCategorias);
     },*/
 
-
 }
 
 module.exports = produtoController;
