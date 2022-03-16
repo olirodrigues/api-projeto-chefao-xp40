@@ -3,19 +3,25 @@ const { Plantas, Cuidados } = require("../models");
 
 
 const produtoController = {
-    listarPlantas: async (req, res) => {
-        const listaDePlantas = await Plantas.findAll({
+
+    listarTodasPlantas: async (req, res) => {
+        const listaTodasPlantas = await Plantas.findAll({
             include: Cuidados
         });
 
-        res.json(listaDePlantas);
+        res.json(listaTodasPlantas);
         //res.json([{ nome: "Produto1"}, { nome: "Produto2"}]);
     },
 
-    listarPranta: async (req,res) => {
-        const listeiPranta = await Plantas.findByPk(req.params.id)
-        res.json(listeiPranta);
-    }
+    listarUmaPlanta: async (req,res) => {
+        const listeiUmaPlanta = await Plantas.findByPk(req.params.id)
+        res.json(listeiUmaPlanta);
+    }, 
+
+    /*listarCategorias: async (req,res) => {
+        const listeiCategorias = await Categorias.findAll()
+        res.json(listeiCategorias);
+    },*/
 
 
 }
