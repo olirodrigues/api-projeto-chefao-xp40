@@ -2,8 +2,14 @@ const express = require("express");
 const routes = express.Router();
 const produtoController = require("../controllers/produtoController");
 
-routes.get("/", produtoController.listarProduto);
+routes.get("/plantas", produtoController.listarPlantas);
 
-routes.post("/", produtoController.cadastrarProduto);
+routes.get("/plantas/:categorias", produtoController.listarPlantas);
+
+
+// plantas/4/24
+
+routes.get("/plantas/:categorias?/:id", produtoController.listarPranta)
+
 
 module.exports = routes;

@@ -1,13 +1,23 @@
+//const Sequelize = require("sequelize");
+const { Plantas, Cuidados } = require("../models");
+
+
 const produtoController = {
-    listarProduto: (req, res) => {
-        res.json([{ nome: "Produto1"}, { nome: "Produto2"}]);
+    listarPlantas: async (req, res) => {
+        const listaDePlantas = await Plantas.findAll({
+            include: Cuidados
+        });
+
+        res.json(listaDePlantas);
+        //res.json([{ nome: "Produto1"}, { nome: "Produto2"}]);
     },
 
-    cadastrarProduto: (req, res) => {
-        console.log(req.body);
-        res.send("Produto Cadastrado!")
-        
+    listarPranta: async (req,res) => {
+        const listeiPranta = await Plantas.findByPk(req.params.id)
+        res.json(listeiPranta);
     }
+
+
 }
 
 module.exports = produtoController;
