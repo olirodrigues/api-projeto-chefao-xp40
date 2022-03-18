@@ -1,7 +1,7 @@
 const express = require("express");
-const routes = require("./src/routes");
-const database = require("./src/database");
-const db = require("./src/database");
+const routes = require("./routes");
+const database = require("./database");
+const db = require("./database");
 
 const app = express();
 const PORT = 8000;
