@@ -1,7 +1,7 @@
 //const Sequelize = require("sequelize");
 const { Plantas, Cuidados } = require("../models");
 
-const produtoController = {
+const plantasController = {
   listarTodasPlantas: async (req, res) => {
     const listaTodasPlantas = await Plantas.findAll({
       include: Cuidados,
@@ -16,4 +16,4 @@ const produtoController = {
   },
 };
 
-module.exports = produtoController;
+module.exports = plantasController;
