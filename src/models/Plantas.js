@@ -8,22 +8,18 @@ const Plantas = db.define("plantas",
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-            //allowNull: false
         },
         
         nome: {
             type: DataTypes.STRING,
-            //allowNull: false
         },
         
         descricao: {
             type: DataTypes.TEXT,
-            //allowNull: false
         }, 
 
         bioma: {
             type: DataTypes.TEXT,
-            //allowNull: false
         },
         
         cuidados_id: {

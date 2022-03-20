@@ -1,11 +1,9 @@
 const express = require("express");
 const routes = express.Router();
-const produtoController = require("../controllers/produtoController");
+const plantasController = require("../controllers/plantasController");
 
-routes.get("/plantas", produtoController.listarTodasPlantas);
+routes.get("/plantas", plantasController.listarTodasPlantas);
 
-routes.get("/plantas/:categorias?/:id", produtoController.listarUmaPlanta);
-
-//routes.get("plantas/categorias", produtoController.listarCategorias);
+routes.get("/plantas/:categorias?/:id", plantasController.listarUmaPlanta);
 
 module.exports = routes;

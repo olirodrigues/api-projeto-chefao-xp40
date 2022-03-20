@@ -8,28 +8,23 @@ const Cuidados = db.define("cuidados",
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-            //allowNull: false,
            
         },
 
         descricao: {
             type: DataTypes.TEXT,
-            //allowNull: false,
         },
 
         temperatura: {
             type: DataTypes.STRING,
-            //allowNull: false,
         },
 
         quantidade_agua: {
             type: DataTypes.STRING,
-            //allowNull: false,
         },
 
         iluminacao: {
             type: DataTypes.STRING,
-            //allowNull: false,
         }
     }
     , {
