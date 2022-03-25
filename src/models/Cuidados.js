@@ -7,7 +7,7 @@ const Cuidados = db.define("cuidados",
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true,
+            //autoIncrement: true,
            
         },
 
