@@ -1,12 +1,9 @@
 //const Sequelize = require("sequelize");
-const { Plantas, Cuidados } = require("../models");
+const { Plantas } = require("../models");
 
 const plantasController = {
   listarTodasPlantas: async (req, res) => {
-    const listaTodasPlantas = await Plantas.findAll({
-      include: Cuidados,
-    });
-
+    const listaTodasPlantas = await Plantas.findAll();
     res.json(listaTodasPlantas);
   },
 
