@@ -9,7 +9,7 @@ const Plantas = db.define("plantas",
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-                },
+            },
         categoria: DataTypes.STRING,
         
         nome: {

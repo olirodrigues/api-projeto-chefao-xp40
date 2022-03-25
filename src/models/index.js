@@ -1,6 +1,7 @@
 const Plantas = require("./Plantas");
 const Fotos = require("./Fotos");
 const Informacoes = require("./Informacoes")
+const Categorias =  require("./Categorias")
 
 Plantas.belongsTo(Informacoes, {
     foreignKey: "informacoes_id",
@@ -21,5 +22,6 @@ Fotos.hasOne(Plantas, {
 module.exports = {
     Plantas,
     Fotos,
-    Informacoes
+    Informacoes,
+    Categorias
 };
