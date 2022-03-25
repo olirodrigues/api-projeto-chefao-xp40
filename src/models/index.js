@@ -1,15 +1,25 @@
 const Plantas = require("./Plantas");
-const Cuidados = require("./Cuidados");
+const Fotos = require("./Fotos");
+const Informacoes = require("./Informacoes")
 
-Plantas.belongsTo(Cuidados, {
-    foreignKey: "cuidados_id",
+Plantas.belongsTo(Informacoes, {
+    foreignKey: "informacoes_id",
 });
 
-Cuidados.hasMany(Plantas, {
-    foreignKey: "cuidados_id",
+Plantas.belongsTo(Fotos, {
+    foreignKey: "fotos_id",
+});
+
+Informacoes.hasOne(Plantas, {
+    foreignKey: "informacoes_id",
+});
+
+Fotos.hasOne(Plantas, {
+    foreignKey: "fotos_id",
 });
 
 module.exports = {
-    Cuidados,
     Plantas,
+    Fotos,
+    Informacoes
 };
