@@ -54,6 +54,12 @@ const Fotos = db.define("fotos",
 
         celular_icon_3: {
             type: DataTypes.STRING,
+        },
+        cel_categorias_inicio: {
+            type: DataTypes.STRING,
+        },
+        cel_categorias_plantas: {
+            type: DataTypes.STRING,
         }
     
     }, {
