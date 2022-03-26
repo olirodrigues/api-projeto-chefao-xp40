@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/olirodrigues/projeto-chefao-xp40#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "express-jwt": "^6.1.1",
     "jsonwebtoken": "^8.5.1",
