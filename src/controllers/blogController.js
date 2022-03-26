@@ -2,24 +2,24 @@ const { Blog, FotosGerais } = require("../models");
 
 const blogController = {
   listarPostsBlog: async (req, res) => {
-    const listaPosts = await Blog.findAll({
+    const listaPostsBlog = await Blog.findAll({
       attributes: ["post_titulo", "post_resumo"],
       include: [
         {model: FotosGerais, attributes: [["capa_blog", "Capa_do_blog"], ["capa_blog_cel", "Capa_do_blog_cel"]]},
       ]
     });
-    res.json(listaPosts);
+    res.json(listaPostsBlog);
   },
 
-  listarUmPost: async( req, res) =>{
-    const listaUmPost = await Blog.findByPk(req.params.id, {
+  listarUmPostBlog: async( req, res) =>{
+    const listaUmPostBlog = await Blog.findByPk(req.params.id, {
       include: [{ model: FotosGerais }],
     })
 
-    if (!listaUmPost) {
+    if (!listaUmPostBlog) {
       console.error("Post não encontrado!");
-    } else if (req.params.categorias == listaUmPost.categoria) {
-      res.json(listaUmPost);
+    } else if (req.params.categorias == listaUmPostBlog.categoria) {
+      res.json(listaUmPostBlog);
     } 
   }
   
