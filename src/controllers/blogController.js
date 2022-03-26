@@ -10,6 +10,19 @@ const blogController = {
     });
     res.json(listaPosts);
   },
+
+  listarUmPost: async( req, res) =>{
+    const listaUmPost = await Blog.findByPk(req.params.id, {
+      include: [{ model: FotosGerais }],
+    })
+
+    if (!listaUmPost) {
+      console.error("Post não encontrado!");
+    } else if (req.params.categorias == listaUmPost.categoria) {
+      res.json(listaUmPost);
+    } 
+  }
+  
 };
 
 module.exports = blogController;

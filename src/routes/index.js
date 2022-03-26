@@ -13,6 +13,8 @@ routes.get("/plantas/:categorias/:id", auth, plantasController.listarUmaPlanta);
 
 routes.get("/blog/", auth, blogController.listarPostsBlog);
 
+routes.get("/blog/:id", auth, blogController.listarUmPost);
+
 
 //criar rota sobre nós
 
