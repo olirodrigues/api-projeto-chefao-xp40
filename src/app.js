@@ -1,13 +1,13 @@
 const express = require("express");
 const routes = require("./routes");
 const database = require("./database");
-const db = require("./database");
-
-const app = express();
+const cors = require("cors");
 const PORT = 8000;
+const app = express();
 
-db.temConexao();
+database.temConexao();
 
 app.listen(process.env.PORT || 8001, () => console.log("Servidor online!"));
 app.use(express.json());
+app.use(cors());
 app.use(routes);

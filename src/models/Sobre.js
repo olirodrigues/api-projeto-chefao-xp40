@@ -2,23 +2,20 @@ const database = require("../database");
 const FotosGerais = require("./FotosGerais");
 const { DataTypes } = require("sequelize");
 
-const Blog = database.define(
-  "blog",
+const Sobre = database.define(
+  "sobre",
   {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
     },
-    post_titulo: {
+    sobre_titulo: {
       type: DataTypes.STRING,
     },
-    post_resumo: {
+    sobre_texto: {
       type: DataTypes.STRING,
     },
-    post_texto: {
-      type: DataTypes.STRING,
-    },
-    post_fotos_id: {
+    sobre_fotos_id: {
       type: DataTypes.INTEGER,
       references: {
         model: FotosGerais,
@@ -27,9 +24,9 @@ const Blog = database.define(
     },
   },
   {
-    tableName: "blog",
+    tableName: "sobre",
     timestamps: false,
   }
 );
 
-module.exports = Blog;
+module.exports = Sobre;

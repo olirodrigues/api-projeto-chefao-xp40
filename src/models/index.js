@@ -4,6 +4,7 @@ const Informacoes = require("./Informacoes");
 const Categorias = require("./Categorias");
 const Blog = require("./Blog");
 const FotosGerais = require("./FotosGerais");
+const Sobre = require("./Sobre");
 
 Plantas.belongsTo(Informacoes, {
   foreignKey: "informacoes_id",
@@ -27,11 +28,19 @@ Blog.belongsTo(FotosGerais, {
 
 FotosGerais.hasOne(Blog, {  foreignKey: "post_fotos_id"});
 
+
+Sobre.belongsTo(FotosGerais, {
+  foreignKey: "sobre_fotos_id",
+});
+
+FotosGerais.hasOne(Sobre, {  foreignKey: "sobre_fotos_id"});
+
 module.exports = {
   Plantas,
   Fotos,
   Informacoes,
   Categorias,
   Blog,
-  FotosGerais
+  FotosGerais,
+  Sobre
 };

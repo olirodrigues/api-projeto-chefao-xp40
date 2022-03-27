@@ -1,4 +1,4 @@
-const { Plantas, Informacoes, Fotos, Categorias } = require("../models");
+const { Plantas, Informacoes, Fotos } = require("../models");
 
 const plantasController = {
   listarUmaPlanta: async (req, res) => {
