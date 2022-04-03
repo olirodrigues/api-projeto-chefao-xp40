@@ -317,7 +317,8 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
 # 🤝 Colaboradores:
 
 
-<h1>Back-end<h1\>
+Back-end
+
 <table>
   <tr>
     <td align="center">
