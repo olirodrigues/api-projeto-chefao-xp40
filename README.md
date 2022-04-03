@@ -313,13 +313,16 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
 	      }
          }
 
-## 🤝 Colaboradores:
+--- 
+# 🤝 Colaboradores:
 
+
+<h1>Back-end<h1\>
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/gabezrodz">
-        <img src="https://avatars.githubusercontent.com/u/84934507?s=400&u=2121f2fa27f160de9fc31e854e4353169dfa9f4e&v=4" width="100px;" alt="Foto do Gabriel R. Rodrigues no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/84934507?s=400&u=2121f2fa27f160de9fc31e854e4353169dfa9f4e&v=4" width="100px;" alt="Foto de Gabriel R. Rodrigues"/><br>
         <sub>
           <b>Gabriel R. Rodrigues</b>
         </sub>
@@ -327,7 +330,7 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
     </td>
     <td align="center">
       <a href="https://github.com/palomapfalchi">
-        <img src="https://avatars.githubusercontent.com/u/85750919?v=4" width="100px;" alt="Foto do Pedro"/><br>
+        <img src="https://avatars.githubusercontent.com/u/85750919?v=4" width="100px;" alt="Foto de Paloma"/><br>
         <sub>
           <b>Paloma Patrícia Falchi</b>
         </sub>
@@ -335,7 +338,7 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
     </td>
      <td align="center">
       <a href="https://github.com/WellingtonMax">
-        <img src="https://avatars.githubusercontent.com/u/83736385?v=4" width="100px;" alt="Foto do Wellington"/><br>
+        <img src="https://avatars.githubusercontent.com/u/83736385?v=4" width="100px;" alt="Foto de Wellington"/><br>
         <sub>
           <b>Wellington L. Maximiniano</b>
         </sub>
@@ -344,12 +347,46 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
   </tr>
 </table>
 
+---
 
+Front-end
 
-## 🤝 Contribuições
+<table>
+  <tr> 
+    <td align="center">
+      <a href="https://github.com/olirodrigues">
+        <img src="https://avatars.githubusercontent.com/u/68714933?v=4" width="100px;" alt="Foto de Olivia"/><br>
+        <sub>
+          <b>Olivia Rodrigues</b>
+        </sub>
+      </a>
+    </td> 
+        <td align="center">
+      <a href="https://github.com/Leox95">
+        <img src="https://avatars.githubusercontent.com/u/90721193?v=4" width="100px;" alt="Foto de Leonardo Paixão"/><br>
+        <sub>
+          <b>Leonardo Paixão</b>
+        </sub>
+      </a>
+    </td> 
+        <td align="center">
+      <a href="https://github.com/Marcos-Ignacio">
+        <img src="https://avatars.githubusercontent.com/u/94194033?v=4" width="100px;" alt="Foto de Marcos Paulo Ignacio"/><br>
+        <sub>
+          <b>Marcos Paulo Ignacio</b>
+        </sub>
+      </a>
+    </td> 
+  <tr\>
+</table>
+
+---
+
+#### 🤝 Contribuições
 
 ---
 <p>Esse projeto só foi possível graças a contribuição de todos os envolvidos, a orientação dos professores da Gama Academy, a equipe de suporte da Gama e principalmente ao esforço colaborativo de toda a equipe ao longo de todo o projeto.<p\>
 
-<h1> Gostou? Deixe uma estrelinha para ajudar o projeto ⭐ <h1\>
+--- 
+#### Gostou? Deixe uma estrelinha para ajudar o projeto ⭐ 
 
