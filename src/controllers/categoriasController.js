@@ -13,7 +13,13 @@ const categoriasController = {
       },
       attributes: ["categoria", "nome", "fotos_id"],
       include: [
-        { model: Fotos, attributes: [["celular_1", "categoria_plantas"], "cel_categorias_plantas"] },
+        {
+          model: Fotos,
+          attributes: [
+            ["celular_1", "categoria_plantas"],
+            "cel_categorias_plantas",
+          ],
+        },
       ],
     });
 
