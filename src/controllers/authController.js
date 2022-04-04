@@ -9,8 +9,8 @@ const AuthController = {
       },
       secret.key
     );
-    return res.json(token)
+    return res.json(token);
   },
 };
 
-module.exports = AuthController
+module.exports = AuthController;
