@@ -14,9 +14,10 @@ const blogController = {
         },
       ],
     });
-    res.json(listaPostsBlog);
-  },
 
+    res.json(listaPostsBlog);
+  
+  },
   listarUmPostBlog: async (req, res) => {
     const listaUmPostBlog = await Blog.findByPk(req.params.id, {
       include: [{ model: FotosGerais }],
@@ -27,7 +28,7 @@ const blogController = {
         mensagem: "Post não encontrado!",
         status: 404,
       });
-    } else if (req.params.categorias == listaUmPostBlog.categoria) {
+    } else if (req.params.id == listaUmPostBlog.id) {
       res.json(listaUmPostBlog);
     }
   },

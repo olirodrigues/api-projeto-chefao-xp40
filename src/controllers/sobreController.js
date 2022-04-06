@@ -12,7 +12,7 @@ const sobreController = {
           "Ops! Algo deu errado, a página que você tentou acessar não existe.",
         status: 404,
       });
-    } else if (req.params.categorias == listaUmPostSobre.categoria) {
+    } else if (req.params.id == listaUmPostSobre.id) {
       res.json(listaUmPostSobre);
     }
   },

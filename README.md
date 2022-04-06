@@ -1,9 +1,5 @@
 # Mee API
 
-<h1 align="center"> 
-	🚧  API 🚀 Em construção... 90%  🚧
-</h1>
-
 
 
 # Guia da API
@@ -18,8 +14,12 @@
 ### Features
 
 - [x] Busca de itens por categorias
+- [x] Implementação do banco de dados com Sequelize
 - [x] Paginação
 
+## Objetivos 
+
+---
 
 ## 📝 Descrição
 
@@ -68,11 +68,13 @@ Requisições para a API devem seguir os padrões:
 
 Nossa API utiliza JWT como forma de autenticação/autorização.
 
-Para utilizar a API do Mee através do JWT é necessário ter acesso ao Token de acesso da API que deverá ser colocada no header.
+Para utilizar a API do Mee através do JWT é necessário ter um Token de acesso da API que deverá ser colocada no header.
+
+Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZnJvbnRFbmREZXZzIiwiaWF0IjoxNjQ3ODIxNjQyfQ.5YOoYI2zHatrl5iY0BGBsEVsNjShrNG8muaQI0cENK8
 
 # Endpoints
 
-# Plantas [/plantas]
+## [/plantas]
 
 Aqui será o ambiente onde se encontrarão todas as categorias de plantas.
 
@@ -80,15 +82,10 @@ Aqui será o ambiente onde se encontrarão todas as categorias de plantas.
 
 - Request (application/json)
 
-  - Headers
-
-          Authorization: Bearer [access_token]
-
 - Response 200 (application/json)
 
   - Body
  
-      
 		{
             "id": 1,
 		"nome": "Cactos",
@@ -111,17 +108,13 @@ Aqui será o ambiente onde se encontrarão todas as categorias de plantas.
 		"foto_celular": "CHx100"
             }
 	
-# Plantas [/plantas/:]
+## [/plantas/:]
 
 Nesse endpoint será retornada informação sobre uma das três categorias existentes de acordo com o que for selecionado e colocado no placeholder, sendo as três categorias (cactos, horticolas e suculentas).
 
 ### Listar (List) [GET]
 
 - Request (application/json)
-
-  - Headers
-
-          Authorization: Bearer [access_token]
 
 - Response 200 (application/json)
 
@@ -155,17 +148,13 @@ Nesse endpoint será retornada informação sobre uma das três categorias exist
 	      }
     
 
-# Plantas [/plantas/:/:id]
+# [/plantas/:/:id]
 
 Aqui estará disponível uma planta específica dentro de uma categoria através do placeholder da categoria das plantas e do ID das plantas, sendo os IDs (1,2,3 para cactos, 4,5 e 6 para suculentas e 7,8,9 para horticolas).
 
 ### Listar (List) [GET]
 
 - Request (application/json)
-
-  - Headers
-
-          Authorization: Bearer [access_token]
 
 - Response 200 (application/json)
 
@@ -208,17 +197,13 @@ Aqui estará disponível uma planta específica dentro de uma categoria através
                   }
             }
 
-# Blog [/blog/]
+# [/blog]
 
 Nesse endpoint será possível visualiazar todos os posts disponíveis do blog.
 
 ### Listar (List) [GET]
 
 - Request (application/json)
-
-  - Headers
-
-          Authorization: Bearer [access_token]
 
 - Response 200 (application/json)
 
@@ -250,17 +235,13 @@ Nesse endpoint será possível visualiazar todos os posts disponíveis do blog.
 	      }
 
 
-# Blog [/blog/:id]
+# [/blog/:id]
 
 Aqui será visível um post específico do blog ao ser selecionado.
 
 ### Listar (List) [GET]
 
 - Request (application/json)
-
-  - Headers
-
-          Authorization: Bearer [access_token]
 
 - Response 200 (application/json)
 
@@ -282,17 +263,13 @@ Aqui será visível um post específico do blog ao ser selecionado.
         }
 	
 
-# Sobre nós [/sobre/:id]
+# [/sobre/:id]
 
 Nesse endpoint é possível visualizar o texto de apresentação da empresa/projeto.
 
 ### Listar (List) [GET]
 
 - Request (application/json)
-
-  - Headers
-
-          Authorization: Bearer [access_token]
 
 - Response 200 (application/json)
 
