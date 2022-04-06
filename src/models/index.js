@@ -26,14 +26,13 @@ Blog.belongsTo(FotosGerais, {
   foreignKey: "post_fotos_id",
 });
 
-FotosGerais.hasOne(Blog, {  foreignKey: "post_fotos_id"});
-
+FotosGerais.hasOne(Blog, { foreignKey: "post_fotos_id" });
 
 Sobre.belongsTo(FotosGerais, {
   foreignKey: "sobre_fotos_id",
 });
 
-FotosGerais.hasOne(Sobre, {  foreignKey: "sobre_fotos_id"});
+FotosGerais.hasOne(Sobre, { foreignKey: "sobre_fotos_id" });
 
 module.exports = {
   Plantas,
@@ -42,5 +41,5 @@ module.exports = {
   Categorias,
   Blog,
   FotosGerais,
-  Sobre
+  Sobre,
 };

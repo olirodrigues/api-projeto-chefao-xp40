@@ -13,7 +13,7 @@ const plantasController = {
           status: 404,
         });
       }
-    } else if (req.params.categorias == listeiUmaPlanta.categoria) {
+    } else if (req.params.categorias === listeiUmaPlanta.categoria) {
       res.json(listeiUmaPlanta);
     } else {
       res.status(404).json({
