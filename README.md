@@ -1,8 +1,6 @@
-# Mee API
+# 🍃Mee API 🍃
 
-
-
-# Guia da API
+# 📋Guia da API
 
 - [Descrição](#📝-descrição)
 - [Como Executar](#🖥️-como-executar)
@@ -11,21 +9,27 @@
 - [Autenticação](#autenticação---jwt)
 - [Endpoints](#endpoints)
 
-### Features
+---
+
+## 💾Features
 
 - [x] Busca de itens por categorias
 - [x] Implementação do banco de dados com Sequelize
 - [x] Paginação
 
-## Objetivos 
 
----
+## 🎯Objetivos 
+
+- [x] Configuração de um banco de dados relacional.
+- [x] Criação de uma API capaz de buscar dados de forma categorizada.
+- [x] Criação de uma API capaz de listar produtos.
+
+
 
 ## 📝 Descrição
 
 <p align="center">Desafio final do curso de Desenvolvimento Full Stack da Gama Academy. A proposta desse projeto foi criar um portfólio navegável e interativo de um empreendimento, e assim surgiu a Mee!</p>
 
-<!-- LOGO DA MEE -->
 
 <p align="center"> A Mee é uma empresa que se preocupa com o bem-estar das pessoas. Nossas plantinhas são especificas para ambientes internos e requerem poucos cuidados visando pessoas que querem ter muito verde dentro de casa aliando ao aspecto estético e decorativo.</p>
 
@@ -35,7 +39,7 @@
 
       $ npm i
 
-## 🛠 Tecnologias
+## 🔨 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -46,25 +50,26 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - React
 - CSS3
 
-## Métodos
+## 🔍Métodos
 
 Requisições para a API devem seguir os padrões:
 | Método | Descrição |
 |---|---|
 | GET | Retorna informações de um ou mais registros. |
 
-## Respostas
+## 📝Respostas
 
-<!-- Conferir mensagens de erro -->
 
 | Código | Descrição                                                                                    |
 | ------ | -------------------------------------------------------------------------------------------- |
 | 200    | Retorna a categoria de plantas, plantas, post do blog ou do sobre nós, a depender do caminho |
+| 404    | Post não encontrado!                                                                         |
+| 404    | Categoria não cadastrada no banco de dados!                                                  |
 | 404    | Planta não cadastrada no banco de dados!                                                     |
 | 404    | Planta não encontrada nessa categoria!                                                       |
-| 404    | Post não encontrado!                                                                         |
+| 404    | Ops! Algo deu errado, a página que você tentou acessar não existe.                           |                                             
 
-# Autenticação - JWT
+# 🔓Autenticação - JWT
 
 Nossa API utiliza JWT como forma de autenticação/autorização.
 
@@ -72,9 +77,9 @@ Para utilizar a API do Mee através do JWT é necessário ter um Token de acesso
 
 Token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZnJvbnRFbmREZXZzIiwiaWF0IjoxNjQ3ODIxNjQyfQ.5YOoYI2zHatrl5iY0BGBsEVsNjShrNG8muaQI0cENK8
 
-# Endpoints
+# 🔚Endpoints
 
-## [/plantas]
+# [/plantas]
 
 Aqui será o ambiente onde se encontrarão todas as categorias de plantas.
 
@@ -107,8 +112,11 @@ Aqui será o ambiente onde se encontrarão todas as categorias de plantas.
 		"foto_tablet": "CHx150",
 		"foto_celular": "CHx100"
             }
+
+
+    
 	
-## [/plantas/:]
+# [/plantas/:]
 
 Nesse endpoint será retornada informação sobre uma das três categorias existentes de acordo com o que for selecionado e colocado no placeholder, sendo as três categorias (cactos, horticolas e suculentas).
 
@@ -146,7 +154,14 @@ Nesse endpoint será retornada informação sobre uma das três categorias exist
 			"cel_categorias_plantas": "PC0301x150"
 		}
 	      }
-    
+
+Response 404 (application/json)
+		
+		{
+		"mensagem": "Categoria não cadastrada no banco de dados!",
+		"status": 404
+		}
+
 
 # [/plantas/:/:id]
 
@@ -196,6 +211,23 @@ Aqui estará disponível uma planta específica dentro de uma categoria através
                   "cel_categorias_plantas": "PC0201x150"
                   }
             }
+
+- Response 404 (application/json)
+
+		{
+		"mensagem": "Planta não encontrada nessa categoria!",
+		"status": 404
+		}
+
+- Response 404 (application/json)
+
+		{
+		"mensagem": "Planta não cadastrada no banco de dados!",
+		"status": 404
+		}
+
+
+
 
 # [/blog]
 
@@ -262,6 +294,12 @@ Aqui será visível um post específico do blog ao ser selecionado.
 	     }
         }
 	
+- Response 404 (application/json)
+
+		{
+		"mensagem": "Post não encontrado!",
+		"status": 404
+		}
 
 # [/sobre/:id]
 
@@ -290,8 +328,11 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
 	      }
          }
 
-## 🤝 Colaboradores:
 
+
+## 🤝 Colaboradores:
+---
+# Back-end Dev
 <table>
   <tr>
     <td align="center">
@@ -321,6 +362,37 @@ Nesse endpoint é possível visualizar o texto de apresentação da empresa/proj
   </tr>
 </table>
 
+---
+
+# Front-end Dev
+<table>
+  <tr>
+   	<td align="center">
+      	<a href="https://github.com/olirodrigues">
+        <img src="https://avatars.githubusercontent.com/u/68714933?v=4" width="100px;" alt="Foto de Olivia Rodrigues"/><br>
+        <sub>
+          <b>Olivia Rodrigues</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Leox95">
+        <img src="https://avatars.githubusercontent.com/u/90721193?v=4" width="100px;" alt="Foto de Leonardo Paixão"/><br>
+        <sub>
+          <b>Leonardo Paixão</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/Marcos-Ignacio">
+        <img src="https://avatars.githubusercontent.com/u/94194033?v=4" width="100px;" alt="Foto de Marcos Paulo Ignacio"/><br>
+        <sub>
+          <b>Marcos Paulo Ignacio</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 ## 🤝 Contribuições
