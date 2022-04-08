@@ -116,7 +116,7 @@ Aqui será o ambiente onde se encontrarão todas as categorias de plantas.
 
     
 	
-# [/plantas/:]
+# [/plantas/:categorias]
 
 Nesse endpoint será retornada informação sobre uma das três categorias existentes de acordo com o que for selecionado e colocado no placeholder, sendo as três categorias (cactos, horticolas e suculentas).
 
@@ -163,7 +163,7 @@ Response 404 (application/json)
 		}
 
 
-# [/plantas/:/:id]
+# [/plantas/:categorias/:id]
 
 Aqui estará disponível uma planta específica dentro de uma categoria através do placeholder da categoria das plantas e do ID das plantas, sendo os IDs (1,2,3 para cactos, 4,5 e 6 para suculentas e 7,8,9 para horticolas).
 
