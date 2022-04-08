@@ -7,11 +7,19 @@ const plantasController = {
     });
 
     if (!listeiUmaPlanta) {
-      console.error("Planta não cadastrada no banco de dados!");
-    } else if (req.params.categorias == listeiUmaPlanta.categoria) {
+      {
+        res.status(404).json({
+          mensagem: "Planta não cadastrada no banco de dados!",
+          status: 404,
+        });
+      }
+    } else if (req.params.categorias === listeiUmaPlanta.categoria) {
       res.json(listeiUmaPlanta);
     } else {
-      console.error("Planta não encontrada nessa categoria!");
+      res.status(404).json({
+        mensagem: "Planta não encontrada nessa categoria!",
+        status: 404,
+      });
     }
   },
 };

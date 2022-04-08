@@ -12,24 +12,23 @@ const DB_CONFIG = {
 let db = {};
 
 try {
-    db = new Sequelize(DB_NOME, DB_USUARIO, DB_SENHA, DB_CONFIG);
+  db = new Sequelize(DB_NOME, DB_USUARIO, DB_SENHA, DB_CONFIG);
 } catch (error) {
-    console.error("Erro ao tentar conexão com o banco de dados");
+  console.error("Erro ao tentar conexão com o banco de dados");
 }
 
 module.exports = db;
 
 async function temConexao() {
-    try {
-        console.log("Banco de dados conectado!");
-    } catch (error) {
-        console.error("Não tem conexão com o banco de dados!")
-    }
-};
+  try {
+    console.log("Banco de dados conectado!");
+  } catch (error) {
+    console.error("Não tem conexão com o banco de dados!");
+  }
+}
 
 Object.assign(db, {
-    temConexao,
+  temConexao,
 });
 
 module.exports = db;
-
